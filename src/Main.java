@@ -35,9 +35,9 @@ public class Main {
         }
     }
 
-    @SuppressWarnings("unused")
+
     public static void main(String[] args) {
-        System.out.println(
+    System.out.println(
                 "\n\n  /$$$$$$  /$$     /$$ /$$$$$$$  /$$$$$$$$ /$$$$$$$  /$$$$$$$  /$$   /$$ /$$   /$$ /$$   /$$        /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$$$          \r\n" + //
                                         " /$$__  $$|  $$   /$$/| $$__  $$| $$_____/| $$__  $$| $$__  $$| $$  | $$| $$$ | $$| $$  /$$/       /$$__  $$ /$$$_  $$|_____ $$/|_____ $$/          \r\n" + //
                                         "| $$  \\__/ \\  $$ /$$/ | $$  \\ $$| $$      | $$  \\ $$| $$  \\ $$| $$  | $$| $$$$| $$| $$ /$$/       |__/  \\ $$| $$$$\\ $$     /$$/      /$$/        /$$\r\n" + //
@@ -80,9 +80,16 @@ public class Main {
 
                     // Read file
                     Integer bufferLength = Integer.parseInt(input.nextLine());
+                    if (bufferLength < 1) {
+                        System.out.println("Invalid file : Buffer length can't be negative");
+                        return;
+                    }
                     String[] matrixSize = input.nextLine().split(" ");
                     Integer matrixCol = Integer.parseInt(matrixSize[0]);
                     Integer matrixRow = Integer.parseInt(matrixSize[1]);
+                    if (matrixRow < 1 || matrixCol < 1 ) {
+                        System.out.println("Invalid file : Matrix size can't be negative");
+                    }
                     String[][] matrix = new String[matrixRow][matrixCol];
                     for (int i = 0; i < matrixRow; i++) {
                         String[] matrixTxT = input.nextLine().split(" ");
@@ -99,6 +106,10 @@ public class Main {
                     }
 
                     Integer numberOfSequence = Integer.parseInt(input.nextLine());
+                    if (numberOfSequence < 1 ){
+                        System.out.println("Invalid file : Sequence length, please input another file");
+                            return;
+                    }
                     List<Sequence> sequences = new ArrayList<Sequence>();
                     while (input.hasNextLine()) {
                         String[] tokens = input.nextLine().split(" ");
@@ -404,6 +415,16 @@ public class Main {
         visited[row][col] = true;
         tempPath.add(Integer.toString(col + 1) + " " + Integer.toString(row + 1));
 
+        // Check whether the sequence contains any of the sequences at each step
+        String tempString = String.join("", temp);
+        for (Sequence sequence : sequences) {
+            if (tempString.contains(String.join("", sequence.tokens))) {
+                // If it contains, add the sequence and the path to the result
+                result.add(new Pair(new ArrayList<String>(temp), new ArrayList<String>(tempPath)));
+                break;
+            }
+        }
+
         // If the length of sequence (temp) is less than the buffer length, find all
         // possible combinations recursively based on the direction until the length of
         // sequence (temp) is equal to the buffer length
@@ -424,18 +445,6 @@ public class Main {
                                 isHorizontal,
                                 visited, tempPath);
                     }
-                }
-            }
-        }
-        // If the length of sequence (temp) is equal to the buffer length, check whether
-        // the sequence contains any of the sequences
-        else if (temp.size() == bufferLength) {
-            String tempString = String.join("", temp);
-            for (Sequence sequence : sequences) {
-                if (tempString.contains(String.join("", sequence.tokens))) {
-                    // If it contains, add the sequence and the path to the result
-                    result.add(new Pair(new ArrayList<String>(temp), new ArrayList<String>(tempPath)));
-                    break;
                 }
             }
         }
@@ -466,6 +475,7 @@ public class Main {
                 for (String s : highestScore.sequence) {
                     writer.write(s + " ");
                 }
+                writer.write("\n");
                 for (String p : highestScore.path) {
                     writer.write(p + "\n");
                 }
