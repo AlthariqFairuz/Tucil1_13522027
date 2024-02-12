@@ -1,0 +1,4 @@
+0
+There is no buffer that satisfies the condition
+
+5 ms
