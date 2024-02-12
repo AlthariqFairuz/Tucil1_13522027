@@ -37,28 +37,29 @@ public class Main {
 
     @SuppressWarnings("unused")
     public static void main(String[] args) {
-        System.out.println("\n\n /$$$$$$ /$$     /$$/$$$$$$$ /$$$$$$$$/$$$$$$$ /$$$$$$$ /$$   /$$/$$   /$$/$$   /$$        /$$$$$$  /$$$$$$ /$$$$$$$$/$$$$$$$$          \r\n" + //
-                        " /$$__  $|  $$   /$$| $$__  $| $$_____| $$__  $| $$__  $| $$  | $| $$$ | $| $$  /$$/       /$$__  $$/$$$_  $|_____ $$|_____ $$/          \r\n" + //
-                        "| $$  \\__/\\  $$ /$$/| $$  \\ $| $$     | $$  \\ $| $$  \\ $| $$  | $| $$$$| $| $$ /$$/       |__/  \\ $| $$$$\\ $$    /$$/     /$$/        /$$\r\n" + //
-                        "| $$       \\  $$$$/ | $$$$$$$| $$$$$  | $$$$$$$| $$$$$$$| $$  | $| $$ $$ $| $$$$$/          /$$$$$$| $$ $$ $$   /$$/     /$$/        |__/\r\n" + //
-                        "| $$        \\  $$/  | $$__  $| $$__/  | $$__  $| $$____/| $$  | $| $$  $$$| $$  $$         /$$____/| $$\\ $$$$  /$$/     /$$/             \r\n" + //
-                        "| $$    $$   | $$   | $$  \\ $| $$     | $$  \\ $| $$     | $$  | $| $$\\  $$| $$\\  $$       | $$     | $$ \\ $$$ /$$/     /$$/           /$$\r\n" + //
-                        "|  $$$$$$/   | $$   | $$$$$$$| $$$$$$$| $$  | $| $$     |  $$$$$$| $$ \\  $| $$ \\  $$      | $$$$$$$|  $$$$$$//$$/     /$$/           |__/\r\n" + //
-                        " \\______/    |__/   |_______/|________|__/  |__|__/      \\______/|__/  \\__|__/  \\__/      |________/\\______/|__/     |__/                \r\n" + //
-                        "                                                                                                                                         \r\n" + //
-                        "                                                                                                                                         \r\n" + //
-                        "                                                                                                                                         \r\n" + //
-                        " /$$$$$$$ /$$$$$$$ /$$$$$$$$ /$$$$$$  /$$$$$$ /$$   /$$       /$$$$$$$ /$$$$$$$  /$$$$$$ /$$$$$$$$/$$$$$$  /$$$$$$  /$$$$$$ /$$          \r\n" + //
-                        "| $$__  $| $$__  $| $$_____//$$__  $$/$$__  $| $$  | $$      | $$__  $| $$__  $$/$$__  $|__  $$__/$$__  $$/$$__  $$/$$__  $| $$          \r\n" + //
-                        "| $$  \\ $| $$  \\ $| $$     | $$  \\ $| $$  \\__| $$  | $$      | $$  \\ $| $$  \\ $| $$  \\ $$  | $$ | $$  \\ $| $$  \\__| $$  \\ $| $$          \r\n" + //
-                        "| $$$$$$$| $$$$$$$| $$$$$  | $$$$$$$| $$     | $$$$$$$$      | $$$$$$$| $$$$$$$| $$  | $$  | $$ | $$  | $| $$     | $$  | $| $$          \r\n" + //
-                        "| $$__  $| $$__  $| $$__/  | $$__  $| $$     | $$__  $$      | $$____/| $$__  $| $$  | $$  | $$ | $$  | $| $$     | $$  | $| $$          \r\n" + //
-                        "| $$  \\ $| $$  \\ $| $$     | $$  | $| $$    $| $$  | $$      | $$     | $$  \\ $| $$  | $$  | $$ | $$  | $| $$    $| $$  | $| $$          \r\n" + //
-                        "| $$$$$$$| $$  | $| $$$$$$$| $$  | $|  $$$$$$| $$  | $$      | $$     | $$  | $|  $$$$$$/  | $$ |  $$$$$$|  $$$$$$|  $$$$$$| $$$$$$$$    \r\n" + //
-                        "|_______/|__/  |__|________|__/  |__/\\______/|__/  |__/      |__/     |__/  |__/\\______/   |__/  \\______/ \\______/ \\______/|________/    \r\n" + //
-                        "                                                                                                                                         \r\n" + //
-                        "                                                                                                                                         \r\n" + //
-                        "                                                                                                                                         ");
+        System.out.println(
+                "\n\n  /$$$$$$  /$$     /$$ /$$$$$$$  /$$$$$$$$ /$$$$$$$  /$$$$$$$  /$$   /$$ /$$   /$$ /$$   /$$        /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$$$          \r\n" + //
+                                        " /$$__  $$|  $$   /$$/| $$__  $$| $$_____/| $$__  $$| $$__  $$| $$  | $$| $$$ | $$| $$  /$$/       /$$__  $$ /$$$_  $$|_____ $$/|_____ $$/          \r\n" + //
+                                        "| $$  \\__/ \\  $$ /$$/ | $$  \\ $$| $$      | $$  \\ $$| $$  \\ $$| $$  | $$| $$$$| $$| $$ /$$/       |__/  \\ $$| $$$$\\ $$     /$$/      /$$/        /$$\r\n" + //
+                                        "| $$        \\  $$$$/  | $$$$$$$ | $$$$$   | $$$$$$$/| $$$$$$$/| $$  | $$| $$ $$ $$| $$$$$/          /$$$$$$/| $$ $$ $$    /$$/      /$$/        |__/\r\n" + //
+                                        "| $$         \\  $$/   | $$__  $$| $$__/   | $$__  $$| $$____/ | $$  | $$| $$  $$$$| $$  $$         /$$____/ | $$\\ $$$$   /$$/      /$$/             \r\n" + //
+                                        "| $$    $$    | $$    | $$  \\ $$| $$      | $$  \\ $$| $$      | $$  | $$| $$\\  $$$| $$\\  $$       | $$      | $$ \\ $$$  /$$/      /$$/           /$$\r\n" + //
+                                        "|  $$$$$$/    | $$    | $$$$$$$/| $$$$$$$$| $$  | $$| $$      |  $$$$$$/| $$ \\  $$| $$ \\  $$      | $$$$$$$$|  $$$$$$/ /$$/      /$$/           |__/\r\n" + //
+                                        " \\______/     |__/    |_______/ |________/|__/  |__/|__/       \\______/ |__/  \\__/|__/  \\__/      |________/ \\______/ |__/      |__/                \r\n" + //
+                                        "                                                                                                                                                    \r\n" + //
+                                        "                                                                                                                                                    \r\n" + //
+                                        "                                                                                                                                                    \r\n" + //
+                                        " /$$$$$$$  /$$$$$$$  /$$$$$$$$  /$$$$$$   /$$$$$$  /$$   /$$       /$$$$$$$  /$$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$   /$$$$$$   /$$$$$$  /$$         \r\n" + //
+                                        "| $$__  $$| $$__  $$| $$_____/ /$$__  $$ /$$__  $$| $$  | $$      | $$__  $$| $$__  $$ /$$__  $$|__  $$__//$$__  $$ /$$__  $$ /$$__  $$| $$         \r\n" + //
+                                        "| $$  \\ $$| $$  \\ $$| $$      | $$  \\ $$| $$  \\__/| $$  | $$      | $$  \\ $$| $$  \\ $$| $$  \\ $$   | $$  | $$  \\ $$| $$  \\__/| $$  \\ $$| $$         \r\n" + //
+                                        "| $$$$$$$ | $$$$$$$/| $$$$$   | $$$$$$$$| $$      | $$$$$$$$      | $$$$$$$/| $$$$$$$/| $$  | $$   | $$  | $$  | $$| $$      | $$  | $$| $$         \r\n" + //
+                                        "| $$__  $$| $$__  $$| $$__/   | $$__  $$| $$      | $$__  $$      | $$____/ | $$__  $$| $$  | $$   | $$  | $$  | $$| $$      | $$  | $$| $$         \r\n" + //
+                                        "| $$  \\ $$| $$  \\ $$| $$      | $$  | $$| $$    $$| $$  | $$      | $$      | $$  \\ $$| $$  | $$   | $$  | $$  | $$| $$    $$| $$  | $$| $$         \r\n" + //
+                                        "| $$$$$$$/| $$  | $$| $$$$$$$$| $$  | $$|  $$$$$$/| $$  | $$      | $$      | $$  | $$|  $$$$$$/   | $$  |  $$$$$$/|  $$$$$$/|  $$$$$$/| $$$$$$$$   \r\n" + //
+                                        "|_______/ |__/  |__/|________/|__/  |__/ \\______/ |__/  |__/      |__/      |__/  |__/ \\______/    |__/   \\______/  \\______/  \\______/ |________/   \r\n" + //
+                                        "                                                                                                                                                    \r\n" + //
+                                        "                                                                                                                                                    \r\n" + //
+                                        "                                                                                                                                                    ");
         System.out.println("Please choose one input method : ");
         System.out.println("1. Via .txt");
         System.out.println("2. Via CLI");
@@ -89,12 +90,27 @@ public class Main {
                             matrix[i][j] = matrixTxT[j];
                         }
                     }
+
+                    for (int i = 0; i < matrixRow; i++) {
+                        if (!validToken(matrix[i])) {
+                            System.out.println("Matrix is invalid, please input another file");
+                            return;
+                        }
+                    }
+
                     Integer numberOfSequence = Integer.parseInt(input.nextLine());
                     List<Sequence> sequences = new ArrayList<Sequence>();
                     while (input.hasNextLine()) {
                         String[] tokens = input.nextLine().split(" ");
                         String score = input.nextLine();
                         sequences.add(new Sequence(tokens, Integer.parseInt(score)));
+                    }
+
+                    for (Sequence sequence : sequences) {
+                        if (!validToken(sequence.tokens)) {
+                            System.out.println("Sequence is invalid, please input another file");
+                            return;
+                        }
                     }
 
                     // Brute forcce all possbile combinations
@@ -170,9 +186,15 @@ public class Main {
                 System.out.println("Input token, each of them must be separated with a space : ");
                 String tokens = input.nextLine();
                 String[] token = tokens.split(" ");
-                while (!isUnique(token) || token.length != numberOfUniqueToken) {
-                    System.out.println(
-                            "Number of tokens that has been input doesn't equal with the number of unique tokens or the tokens aren't unique. Please input again : ");
+                while (!isUnique(token) || token.length != numberOfUniqueToken || !validToken(token)) {
+                    if (!isUnique(token)) {
+                        System.out.println("Token must be unique");
+                    } else if (token.length != numberOfUniqueToken) {
+                        System.out.println("Number of token must be equal to the number of unique token");
+                    } else {
+                        System.out.println("Each token must consist of 2 characters");
+                    }
+                    System.out.println("Please input again :");
                     tokens = input.nextLine();
                     token = tokens.split(" ");
                 }
@@ -212,12 +234,24 @@ public class Main {
                     maxSequenceLength = Integer.parseInt(input.nextLine());
                 }
 
+                // Find maximum possible sequence
+                int maxPossibleSequence = 0;
+                for (int i = 2; i <= maxSequenceLength; i++) {
+                    maxPossibleSequence += Math.pow(numberOfUniqueToken, i);
+                }
+
                 System.out.println();
 
                 System.out.println("Input number of sequence : ");
                 Integer numberOfSequence = Integer.parseInt(input.nextLine());
-                while (numberOfSequence < 1) {
-                    System.out.println("Number of sequence must be at least 1. Please input again :");
+                while (numberOfSequence < 1 || numberOfSequence > maxPossibleSequence) {
+                    if (numberOfSequence < 1) {
+                        System.out.println(
+                                "Number of sequence must be at least 1. Please input again :");
+                    } else {
+                        System.out.println("Number of sequence is too high, maximum number of sequence is "
+                                + maxPossibleSequence + ". Please input again :");
+                    }
                     numberOfSequence = Integer.parseInt(input.nextLine());
                 }
                 System.out.println();
@@ -264,7 +298,7 @@ public class Main {
                         for (int j = 0; j < sequence.length; j++) {
                             sequence[j] = token[(int) (Math.random() * numberOfUniqueToken)];
                         }
-                        // Update sequence string, convert sequence to string ([a, b, c] -> "[a,b,c]")
+                        // Update sequence string
                         sequenceStr = Arrays.toString(sequence);
                     }
 
@@ -286,7 +320,7 @@ public class Main {
                     System.out.println(sequence.score + "\n\n");
                 }
 
-                // Brute forcce all combinatio
+                // Brute forcce all combinations
                 long startTime = System.currentTimeMillis();
                 boolean visited[][] = new boolean[matrix.length][matrix[0].length];
                 List<Pair> result = new ArrayList<Pair>();
@@ -450,6 +484,16 @@ public class Main {
         // Check whether a token is unique or not
         Set<String> uniqueTokens = new HashSet<String>(Arrays.asList(token));
         return uniqueTokens.size() == token.length;
+    }
+
+    static boolean validToken(String[] tokens) {
+        // Check whether a token is valid or not (only consists of 2 characters)
+        for (String token : tokens) {
+            if (token.length() != 2) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
